@@ -1,0 +1,80 @@
+{
+  "profile": {
+    "name": "Suhrob Madaminov",
+    "role": "Dasturchi",
+    "bio": "Toza kod, foydalanuvchi tajribasi va samaradorlikka e'tibor bergan dasturchi. GitHub uslubidagi zamonaviy dizaynlar va optimallashtirilgan yechimlar yarataman.",
+    "avatarIcon": "user"
+  },
+  "links": {
+    "github": "https://github.com/suhrobmadaminov",
+    "telegram": "https://t.me/MadaminovSuhrob",
+    "phone": "+998950517209"
+  },
+  "ui": {
+    "themeDefault": "dark",
+    "languages": ["uz", "en", "tr", "ru"],
+    "i18nDefault": "uz"
+  },
+  "stats": {
+    "years": 1,
+    "projects": 1,
+    "systems": 1
+  },
+  "education": [
+    { "title": "Maktab", "meta": "2016-09 — 2025-05" },
+    { "title": "Politexnikum", "meta": "2025-09 — hozirgacha" },
+    { "title": "Al-Xorazmiy vorislari", "meta": "Talabasi" }
+  ],
+  "languages": [
+    { "code": "uz", "label": "O'zbek — Ona tili", "flag": "🇺🇿" },
+    { "code": "ru", "label": "Rus — O'rta", "flag": "🇷🇺" },
+    { "code": "en", "label": "Ingliz — Boshlang'ich", "flag": "🇬🇧" },
+    { "code": "de", "label": "Nemis — Boshlang'ich", "flag": "🇩🇪" }
+  ],
+  "experience": [
+    {
+      "company": "Freelance / Mustaqil",
+      "role": "Jr. Dasturchi",
+      "start": "2024",
+      "end": "hozirgacha",
+      "bullets": [
+        "HTML/CSS/JS bilan responsive sahifalar",
+        "Github uslubida tematik UI va animatsiyalar",
+        "Texnik hujjatlashtirish va optimallashtirish"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "SQLite Notlar ilovasi",
+      "desc": "Python va SQLite yordamida oddiy CRUD notlar tizimi.",
+      "tags": ["Python", "SQLite", "CLI"],
+      "links": { "demo": "", "github": "https://github.com/suhrobmadaminov" },
+      "icon": "database"
+    },
+    {
+      "title": "Responsive Portfolio",
+      "desc": "Toza HTML/CSS/JS bilan ko'p tilli portfolio.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "links": { "demo": "", "github": "https://github.com/suhrobmadaminov" },
+      "icon": "globe"
+    }
+  ],
+  "skills": [
+    { "category": "fullstack", "title": "To'liq funksional dasturlash", "items": ["Python", "HTML", "CSS", "JavaScript"] },
+    { "category": "db", "title": "Ma'lumotlar bazalari va saqlash", "items": ["SQLite", "JSON"] },
+    { "category": "leadership", "title": "Liderlik va muloqot", "items": ["Muloqot", "Jamoada ishlash"] },
+    { "category": "ai", "title": "AI va avtomatlashtirish", "items": ["Prompting", "Automation"] }
+  ],
+  "certificates": [
+    { "title": "Python Foundations", "issuer": "Online", "date": "2024", "image": "" },
+    { "title": "Web Fundamentals", "issuer": "Online", "date": "2024", "image": "" },
+    { "title": "Web Design Sertifikati", "issuer": "IT Study", "date": "2025-06-08", "image": "images/Suhrob Web Dizayn.PNG" }
+  ],
+  "contact": {
+    "title": "Aloqa",
+    "github": { "label": "GitHub", "desc": "Repos va loyihalar", "url": "https://github.com/suhrobmadaminov" },
+    "telegram": { "label": "Telegram", "desc": "Tezkor xabar yuborish", "url": "https://t.me/MadaminovSuhrob" },
+    "phone": { "label": "Telefon", "value": "+998 95 051 72 09", "tel": "+998950517209" }
+  }
+}
