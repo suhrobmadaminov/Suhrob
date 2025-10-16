@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Suhrob Madaminov — Portfolio</title>
+  <meta name="description" content="Suhrob Madaminov — Dasturchi. Portfolio, tajriba, loyihalar va aloqa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/J6MdUj+v6Z6QJ9WlH0hZr2L1o0lYV7Z1x2zJk9G6t5lU6j8X1Jz7yFqAq4J3rA8VjZr+6xF0w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;">
+      <div class="brand" style="display:flex;align-items:center;gap:12px;font-weight:700;">
+        <div class="logo" style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#fff;box-shadow:0 6px 18px rgba(47,129,247,0.35)"><i class="fa-solid fa-code"></i></div>
+        <div class="gradient-text">Suhrob Madaminov</div>
+      </div>
+      <nav>
+        <ul id="navList" style="display:flex;gap:18px;list-style:none;margin:0;padding:0;">
+          <li><a href="#hero" data-i18n="nav.home" class="active">Bosh sahifa</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Loyihalar</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Ko'nikmalar</a></li>
+          <li><a href="#about" data-i18n="nav.about">Men haqimda</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Ish tajribasi</a></li>
+          <li><a href="#certs" data-i18n="nav.certs">Sertifikatlar</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Aloqa</a></li>
+        </ul>
+      </nav>
+      <div class="controls" style="display:flex;align-items:center;gap:10px;">
+        <select class="lang-select" id="langSelect" aria-label="Language" style="background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:999px;padding:6px 12px;">
+          <option value="uz">UZ</option>
+          <option value="en">EN</option>
+          <option value="tr">TR</option>
+          <option value="ru">RU</option>
+        </select>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" style="position:relative;width:64px;height:34px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--text);display:inline-flex;align-items:center;cursor:pointer;padding:0;overflow:hidden;"></button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" style="background:transparent;border:0;color:var(--text);font-size:22px;display:none;"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="hero" class="container" style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:36px;align-items:center;">
+      <div>
+        <h1 data-i18n="hero.title" style="font-size:44px;line-height:1.15;margin:0 0 10px;" class="gradient-text">Suhrob Madaminov</h1>
+        <div class="subtitle" data-i18n="hero.role" style="font-size:20px;color:var(--muted);margin-bottom:18px;">Dasturchi</div>
+        <p class="muted" data-i18n="hero.desc" style="color:var(--muted);">Toza kod, foydalanuvchi tajribasi va samaradorlikka e'tibor bergan dasturchi. Github uslubidagi zamonaviy dizaynlar va optimallashtirilgan yechimlar yarataman.</p>
+        <div class="stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0;">
+          <div class="stat" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px;text-align:center;">
+            <h3 style="margin:0;font-size:22px;">1+</h3>
+            <div class="muted" data-i18n="stats.years" style="color:var(--muted);">Yillik tajriba</div>
+          </div>
+          <div class="stat" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px;text-align:center;">
+            <h3 style="margin:0;font-size:22px;">1+</h3>
+            <div class="muted" data-i18n="stats.companies" style="color:var(--muted);">Loyihalar</div>
+          </div>
+          <div class="stat" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px;text-align:center;">
+            <h3 style="margin:0;font-size:22px;">1+</h3>
+            <div class="muted" data-i18n="stats.systems" style="color:var(--muted);">Tizimlar</div>
+          </div>
+        </div>
+        <div class="cta" style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap;">
+          <a class="btn" href="#projects" data-i18n="hero.ctaPrimary" style="display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);">Loyihalarni ko'rish</a>
+          <a class="btn" href="#contact" data-i18n="hero.ctaSecondary" style="display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);">Men bilan bog'lanish</a>
+        </div>
+        <div class="tech" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;">
+          <i class="fa-brands fa-python" title="Python" style="font-size:20px;color:var(--muted);"></i>
+          <i class="fa-brands fa-html5" title="HTML5" style="font-size:20px;color:var(--muted);"></i>
+          <i class="fa-brands fa-css3-alt" title="CSS3" style="font-size:20px;color:var(--muted);"></i>
+          <i class="fa-solid fa-database" title="SQLite" style="font-size:20px;color:var(--muted);"></i>
+          <i class="fa-brands fa-git-alt" title="Git" style="font-size:20px;color:var(--muted);"></i>
+        </div>
+      </div>
+      <div class="portrait" aria-hidden="true" style="aspect-ratio:1/1;border-radius:22px;background:linear-gradient(135deg, rgba(47,129,247,0.25), rgba(126,231,135,0.25));border:1px solid var(--border);box-shadow:var(--shadow);display:grid;place-items:center;font-size:64px;color:#fff;"><i class="fa-solid fa-user"></i></div>
+    </section>
+    <section id="about" class="container">
+      <h2 class="section-title" data-i18n="about.title">Men haqimda</h2>
+      <div class="about-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+        <div class="glass-card" style="background:var(--glass);border:1px solid var(--border);border-radius:14px;padding:20px;box-shadow:var(--shadow);">
+          <p data-i18n="about.p1">2016-2025 yillarda maktabda ta'lim oldim. 2025 yildan buyon Politexnikumda tahsil olayapman. Al-Xorazmiy vorislari loyihasining talabasi sifatida algoritmik tafakkurni rivojlantirmoqdaman.</p>
+          <p data-i18n="about.p2">Python, HTML, CSS va SQLite bilan amaliy yechimlar yarataman. Toza arxitektura va minimalist, zamonaviy UI'larni afzal ko'raman.</p>
+          <div class="chips" aria-label="Soft skills" style="display:flex;flex-wrap:wrap;gap:10px;">
+            <span class="chip" data-i18n="about.soft.communication" style="padding:8px 12px;background:var(--surface);border:1px solid var(--border);border-radius:999px;">Muloqot</span>
+            <span class="chip" data-i18n="about.soft.teamwork" style="padding:8px 12px;background:var(--surface);border:1px solid var(--border);border-radius:999px;">Jamoada ishlash</span>
+            <span class="chip" data-i18n="about.soft.problem" style="padding:8px 12px;background:var(--surface);border:1px solid var(--border);border-radius:999px;">Muammo yechish</span>
+            <span class="chip" data-i18n="about.soft.leadership" style="padding:8px 12px;background:var(--surface);border:1px solid var(--border);border-radius:999px;">Liderlik</span>
+          </div>
+        </div>
+        <div class="glass-card" style="background:var(--glass);border:1px solid var(--border);border-radius:14px;padding:20px;box-shadow:var(--shadow);">
+          <div class="edu" style="display:grid;gap:10px;">
+            <div class="item" style="display:grid;gap:6px;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:10px;">
+              <strong data-i18n="about.edu.school.title">Maktab</strong>
+              <span class="muted" data-i18n="about.edu.school.meta" style="color:var(--muted);">2016-09 — 2025-05</span>
+            </div>
+            <div class="item" style="display:grid;gap:6px;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:10px;">
+              <strong data-i18n="about.edu.poly.title">Politexnikum</strong>
+              <span class="muted" data-i18n="about.edu.poly.meta" style="color:var(--muted);">2025-09 — hozirgacha</span>
+            </div>
+            <div class="item" style="display:grid;gap:6px;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:10px;">
+              <strong data-i18n="about.edu.project.title">Al-Xorazmiy vorislari</strong>
+              <span class="muted" data-i18n="about.edu.project.meta" style="color:var(--muted);">Talabasi</span>
+            </div>
+          </div>
+          <div style="height:10px"></div>
+          <div class="langs" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;">
+            <div class="flag" style="display:inline-flex;align-items:center;gap:8px;padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:10px;"><span>🇺🇿</span><span data-i18n="about.langs.uz">O'zbek — Ona tili</span></div>
+            <div class="flag" style="display:inline-flex;align-items:center;gap:8px;padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:10px;"><span>🇷🇺</span><span data-i18n="about.langs.ru">Rus — O'rta</span></div>
+            <div class="flag" style="display:inline-flex;align-items:center;gap:8px;padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:10px;"><span>🇬🇧</span><span data-i18n="about.langs.en">Ingliz — Boshlang'ich</span></div>
+            <div class="flag" style="display:inline-flex;align-items:center;gap:8px;padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:10px;"><span>🇩🇪</span><span data-i18n="about.langs.de">Nemis — Boshlang'ich</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="container">
+      <h2 class="section-title" data-i18n="exp.title">Ish tajribasi</h2>
+      <div class="timeline" style="position:relative;margin-left:8px;">
+        <div style="content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--accent),transparent);"></div>
+        <div class="timeline-item" style="position:relative;padding-left:28px;margin-bottom:18px;transition:transform var(--transition);">
+          <div style="content:'';position:absolute;left:0;top:8px;width:14px;height:14px;border-radius:50%;background:var(--surface);border:2px solid var(--accent);"></div>
+          <a href="#" data-external data-i18n="exp.item1.company" style="font-weight:600;">Freelance / Mustaqil</a>
+          <div class="muted" data-i18n="exp.item1.role" style="color:var(--muted);font-size:14px;">Jr. Dasturchi — 2024 — hozirgacha</div>
+          <ul>
+            <li data-i18n="exp.item1.b1">HTML/CSS/JS bilan responsive sahifalar</li>
+            <li data-i18n="exp.item1.b2">Github uslubida tematik UI va animatsiyalar</li>
+            <li data-i18n="exp.item1.b3">Texnik hujjatlashtirish va optimallashtirish</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="container">
+      <h2 class="section-title" data-i18n="projects.title">Loyihalar</h2>
+      <div class="projects" id="projectsContainer" style="display:grid;gap:14px;">
+        <div class="project" style="display:grid;grid-template-columns:80px 1fr auto;gap:14px;align-items:center;padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--surface);">
+          <div class="icon" style="width:64px;height:64px;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--accent),#6aa3ff)"><i class="fa-solid fa-database"></i></div>
+          <div>
+            <strong data-i18n="projects.p1.title">SQLite Notlar ilovasi</strong>
+            <div class="muted" data-i18n="projects.p1.desc" style="color:var(--muted);">Python va SQLite yordamida oddiy CRUD notlar tizimi.</div>
+            <div class="tags" style="display:flex;flex-wrap:wrap;gap:8px;">
+              <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">Python</span>
+              <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">SQLite</span>
+              <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">CLI</span>
+            </div>
+          </div>
+          <div class="links" style="display:flex;gap:10px;">
+            <a href="#" data-external class="btn" data-i18n="projects.live" style="display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);">Demo</a>
+            <a href="https://github.com/suhrobmadaminov" data-external class="btn" aria-label="GitHub" style="display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="project" style="display:grid;grid-template-columns:80px 1fr auto;gap:14px;align-items:center;padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--surface);">
+          <div class="icon" style="width:64px;height:64px;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#1abc9c,#2ecc71)"><i class="fa-solid fa-globe"></i></div>
+          <div>
+            <strong data-i18n="projects.p2.title">Responsive Portfolio</strong>
+            <div class="muted" data-i18n="projects.p2.desc" style="color:var(--muted);">Toza HTML/CSS/JS bilan ko'p tilli portfolio.</div>
+            <div class="tags" style="display:flex;flex-wrap:wrap;gap:8px;">
+              <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">HTML</span>
+              <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">CSS</span>
+              <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">JavaScript</span>
+            </div>
+          </div>
+          <div class="links" style="display:flex;gap:10px;">
+            <a href="#" data-external class="btn" data-i18n="projects.live" style="display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);">Demo</a>
+            <a href="https://github.com/suhrobmadaminov" data-external class="btn" aria-label="GitHub" style="display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="project" style="display:grid;grid-template-columns:80px 1fr auto;gap:14px;align-items:center;padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--surface);">
+          <div class="icon" style="width:64px;height:64px;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#8e44ad,#9b59b6)"><i class="fa-solid fa-layer-group"></i></div>
+          <div>
+            <strong data-i18n="projects.more.title">Ko'proq loyihalar</strong>
+            <div class="muted" data-i18n="projects.more.desc" style="color:var(--muted);">Yaqinda qo'shiladi. GitHub'dan kuzatib boring.</div>
+            <div class="tags" style="display:flex;flex-wrap:wrap;gap:8px;">
+              <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">Open Source</span>
+            </div>
+          </div>
+          <div class="links" style="display:flex;gap:10px;">
+            <a href="https://github.com/suhrobmadaminov?tab=repositories" data-external class="btn" aria-label="GitHub" style="display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="container">
+      <h2 class="section-title" data-i18n="skills.title">Ko'nikmalar</h2>
+      <div class="skills-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+        <div class="skill-card" style="padding:16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);">
+          <strong data-i18n="skills.cat.fullstack">To'liq funksional dasturlash</strong>
+          <div class="tags" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">
+            <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">Python</span>
+            <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">HTML</span>
+            <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">CSS</span>
+            <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-card" style="padding:16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);">
+          <strong data-i18n="skills.cat.db">Ma'lumotlar bazalari va saqlash</strong>
+          <div class="tags" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">
+            <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">SQLite</span>
+            <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">JSON</span>
+          </div>
+        </div>
+        <div class="skill-card" style="padding:16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);">
+          <strong data-i18n="skills.cat.leadership">Liderlik va muloqot</strong>
+          <div class="tags" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">
+            <span class="tag" data-i18n="about.soft.communication" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">Muloqot</span>
+            <span class="tag" data-i18n="about.soft.teamwork" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">Jamoada ishlash</span>
+          </div>
+        </div>
+        <div class="skill-card" style="padding:16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);">
+          <strong data-i18n="skills.cat.ai">AI va avtomatlashtirish</strong>
+          <div class="tags" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">
+            <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">Prompting</span>
+            <span class="tag" style="padding:6px 10px;border-radius:999px;background:rgba(127,127,127,0.08);border:1px solid var(--border);">Automation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certs" class="container">
+      <h2 class="section-title" data-i18n="certs.title">Sertifikatlar</h2>
+      <div class="certs" style="display:grid;gap:12px;">
+        <a class="cert" href="#" data-external style="display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:10px;">
+          <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6aa3ff);color:#fff;display:grid;place-items:center;"><i class="fa-solid fa-certificate"></i></div>
+          <div>
+            <div data-i18n="certs.c1.name">Python Foundations</div>
+            <div class="muted" data-i18n="certs.c1.meta" style="color:var(--muted);">Online — 2024</div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="color:var(--muted);"></i>
+        </a>
+        <a class="cert" href="#" data-external style="display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:10px;">
+          <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,#9b59b6,#8e44ad);color:#fff;display:grid;place-items:center;"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <div data-i18n="certs.c2.name">Web Fundamentals</div>
+            <div class="muted" data-i18n="certs.c2.meta" style="color:var(--muted);">Online — 2024</div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="color:var(--muted);"></i>
+        </a>
+        <a class="cert" href="images/Suhrob Web Dizayn.PNG" data-external style="display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:10px;">
+          <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,#2ecc71,#27ae60);color:#fff;display:grid;place-items:center;"><i class="fa-solid fa-image"></i></div>
+          <div>
+            <div>Web Design Sertifikati</div>
+            <div class="muted" style="color:var(--muted);">IT Study — 2025-06-08</div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="color:var(--muted);"></i>
+        </a>
+      </div>
+    </section>
+    <section id="contact" class="container">
+      <h2 class="section-title" data-i18n="contact.title">Aloqa</h2>
+      <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+        <div class="contact-cards" style="display:grid;gap:12px;">
+          <a class="contact-card" href="https://github.com/suhrobmadaminov" data-external style="display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;padding:12px;border:1px solid var(--border);border-radius:14px;background:var(--surface);">
+            <i class="fa-brands fa-github" style="color:#fff;background:#24292f;width:48px;height:48px;display:grid;place-items:center;border-radius:12px;"></i>
+            <div>
+              <strong>GitHub</strong>
+              <div class="muted" data-i18n="contact.github" style="color:var(--muted);">Repos va loyihalar</div>
+            </div>
+          </a>
+          <a class="contact-card" href="https://t.me/MadaminovSuhrob" data-external style="display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;padding:12px;border:1px solid var(--border);border-radius:14px;background:var(--surface);">
+            <i class="fa-brands fa-telegram" style="color:#fff;background:#229ED9;width:48px;height:48px;display:grid;place-items:center;border-radius:12px;"></i>
+            <div>
+              <strong>Telegram</strong>
+              <div class="muted" data-i18n="contact.telegram" style="color:var(--muted);">Tezkor xabar yuborish</div>
+            </div>
+          </a>
+          <a class="contact-card" href="tel:+998950517209" style="display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;padding:12px;border:1px solid var(--border);border-radius:14px;background:var(--surface);">
+            <i class="fa-solid fa-phone" style="color:#fff;background:#2f81f7;width:48px;height:48px;display:grid;place-items:center;border-radius:12px;"></i>
+            <div>
+              <strong data-i18n="contact.phone">Telefon</strong>
+              <div class="muted" style="color:var(--muted);">+998 95 051 72 09</div>
+            </div>
+          </a>
+        </div>
+        <div class="glass-card" style="background:var(--glass);border:1px solid var(--border);border-radius:14px;padding:20px;box-shadow:var(--shadow);">
+          <form id="contactForm" novalidate style="display:grid;gap:10px;">
+            <input class="input" type="text" id="name" placeholder="Ism" aria-label="Name" required style="padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);">
+            <div id="nameError" class="error" style="color:var(--danger);font-size:13px;min-height:18px;"></div>
+            <input class="input" type="email" id="email" placeholder="Email" aria-label="Email" required style="padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);">
+            <div id="emailError" class="error" style="color:var(--danger);font-size:13px;min-height:18px;"></div>
+            <textarea class="input" id="message" rows="5" placeholder="Xabar" aria-label="Message" required style="padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);"></textarea>
+            <div id="messageError" class="error" style="color:var(--danger);font-size:13px;min-height:18px;"></div>
+            <button class="btn" type="submit" data-i18n="contact.send" style="display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid var(--border);background:linear-gradient(135deg,var(--accent),#6aa3ff);color:#fff;">Yuborish</button>
+            <div id="formResult" class="muted" role="status" aria-live="polite" style="color:var(--muted);"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container" style="padding:36px 0;border-top:1px solid var(--border);color:var(--muted);">
+      <div class="footer-grid" style="display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;">
+        <div class="socials" style="display:flex;gap:12px;">
+        <a href="https://github.com/suhrobmadaminov" data-external aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://t.me/MadaminovSuhrob" data-external aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+      <div class="muted">© <span id="year"></span> Suhrob Madaminov</div>
+    </div>
+  </footer>
+
+    <button id="backToTop" aria-label="Back to top" style="position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;border:1px solid var(--border);background:var(--surface);color:var(--text);display:grid;place-items:center;cursor:pointer;box-shadow:var(--shadow);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity var(--transition), transform var(--transition), visibility var(--transition);"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
